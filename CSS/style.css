@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+/*  font-family: 'Oi', serif;
+    font-family: 'Montserrat', sans-serif;  */
+
+/* SUMÁRIO 
+  navbar - 37
+  carrosel - 100
+  quem somos - 160
+  procure seu peludo - 193
+  outras maneiras de ajudar - 255
+  denuncie - 321
+  rodapé - 415
+  cadastro - 492
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+    
+html,
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+    
+body {
+  font-size: 1.2vw;
+  background-color: #FEEFDA;
+}
+
+/* NAVBAR */
+
+.navbarFundo{
+  position: absolute;
+  width: 100%;
+  height: 6vw;
+  z-index: 3;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.navbar{
+  position: relative;
+  width: 80%;
+  height: 75%;
+  margin: auto;
+  z-index: 4;
+}
+
+.navbarEspaco{
+  position: absolute;
+  border-bottom: 0.123vw solid white;
+  width: 100%; 
+  height: 100%;
+}
+
+.itensNavbarEspaco{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.itensNavbarLista{
+  position: relative;
+  display: flex;
+  list-style: none;
+  gap: 4vw;
+  margin-top: 1.8vw;
+}
+
+.itensNavbarLista li:hover{
+  text-decoration: underline white;
+}
+
+.itensNavbarLista a{
+ text-decoration: none; 
+ color: white;
+ text-transform: capitalize;
+ font-weight: lighter;
+}
+
+.logoNavbar{
+  position: relative;
+  height: 85%;
+  width: 18%;
+  margin-top: 1.4vw;
+}
+
+#imgLogoNavbar{
+  width: 10vw;
+}
+
+/* CARROSSEL */
+
+.carrossel{
+  position: relative;
+  width: 100%;
+  height: 45vw;
+}
+  
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+  
+.container-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+  
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: opacity .2s;
+}
+  
+.on {
+  opacity: 1;
+}
+  
+#prev-button, 
+#next-button {
+    position: absolute;
+    width: 4vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    top: 22vw;
+    z-index: 2;
+  }
+  #prev-button{
+    left: 6vw;
+  }
+  #next-button{
+    right: 5vw;
+  }
+
+
+  #prev-button img, #next-button img {
+    width: 4vw;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+
+/* QUEM SOMOS */
+
+.quemSomos{
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quemSomosEspaco{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.textoQuemSomosEspaco{
+  width: 35%;
+  height: 25%;
+}
+
+#textoQuemSomos{
+  color: #1E1F23;
+  font-weight: lighter;
+}
+
+#imgQuemSomos{
+  width: 27vw;
+}
+
+/* PROCURE SEU PELUDO */
+
+.procureSeuPeludo{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-top: 0.2vw solid #1E1F23;
+  border-bottom: 0.2vw solid #1E1F23;
+}
+
+.procureSeuPeludoEspaco{
+  width: 85%;
+  display: flex;
+}
+
+#imgGatoClicaAqui{
+  width: 18.5vw;
+  height: 100%;
+}
+
+.textoProcurePosicao{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.textoProcureEspaco{
+  width: 20%;
+}
+
+#textoProcure{
+  font-family: 'Oi', serif;
+  font-weight: lighter;
+  text-align: right;
+  color: #F54D58;
+}
+
+.botaoProcureEspaco{
+  position: relative;
+  background-color: aqua;
+}
+
+.botaoProcurePosicao{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3vw;
+}
+
+#botaoProcure{
+  background-color: #F54D58;
+  width: 17vw;
+  padding: 0.8vw;
+  border-style: none;
+  border-radius: 0.2vw;
+  font-size: 1.5vw;
+  color: white;
+  cursor: pointer;
+}
+
+/* OUTRAS MANEIRAS DE AJUDAR */
+
+.maneirasAjudar{
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maneirasAjudarEspaco{
+  width: 85%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.maneirasAjudarPosicao{
+  display: flex;
+}
+
+.textoAlemDeEspaco{
+  width: 38vw;
+}
+
+#textoAlemDe{
+  font-family: 'Oi', serif;
+  font-weight: lighter;
+  color: #1E1F23;
+}
+
+.listaAlemDeEspaco{
+  margin-top: 2vw;
+  margin-left: 4vw;
+}
+
+.listaAlemDeEspaco ul{
+  width: 23vw;
+}
+
+.listaAlemDeEspaco li{
+  width: 25vw;
+  font-size: 2vw;
+}
+
+.botaoAlemDeSaibaEspaco{
+  position: relative;
+}
+
+.botaoAlemDeSaibaPosicao{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1vw;
+}
+
+#botaoAlemDeSaiba{
+  background-color: #1E1F23;
+  border-style: none;
+  border-radius: 0.2vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  color: white;
+  width: 10vw;
+  cursor: pointer;
+}
+
+/* DENUNCIE */
+
+.riscosDenuncie{
+  background-color: #1E1F23;
+  width: 90%;
+  height: 1vw;
+  border-radius: 2vw;
+  margin: auto;
+}
+
+.denuncieMausTratos{
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.denuncieMausTratosEspaco{
+  width: 80%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#textoDenuncie{
+  font-family: 'Oi', serif;
+  font-weight: lighter;
+  font-size: 2vw;
+  color: #F54D58;
+  display: flex;
+  margin: auto;
+}
+
+#textoDenuncieCor{
+  color: #1E1F23;
+}
+
+#textoDenuncieMaus{
+  margin-left: 0.5vw;
+}
+
+#imgCaoDenuncie{
+  width: 30vw;
+  border-radius: 1vw;
+}
+
+.denuncieTextosEspaco{
+  width: 55%;
+}
+
+#textoAquiTemos{
+  text-align: center;
+  margin-top: 1.5vw;
+}
+
+.textoDenunciePosicao{
+  display: flex;
+}
+
+#botaoDenunciar{
+  background-color: #1E1F23;
+  font-size: 1.5vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #FEEFDA;
+  padding: 0.5vw;
+  margin-top: 1.5vw;
+  border-style: none;
+  border-radius: 0.4vw;
+  cursor: pointer;
+  width: 12vw;
+  height: 3.5vw;
+}
+
+#botaoDenunciar:hover{
+  background-color: #111214;
+  color: #F54D58;
+  transition: 0.3s;
+}
+
+.botaoDenunciarPosicao{
+  display: flex;
+  justify-content: center;
+}
+
+/* div-quebra-linha-denuncieRodape */
+
+.brDenuncieRodape{
+  width: 100%;
+  height: 10vw;
+}
+
+/*  RODAPÉ */
+
+   footer{
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    background-color: #F2506E;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: auto;
+    font-size: 1vw;
+    color: #fff;
+   }
+   footer div{
+    left: 2vw;
+}
+   .semLink{
+
+    display: block;
+    position: relative;
+    top: 4vw;
+
+    margin-bottom: auto;
+   }
+   .conheca{
+    width: 14vw;
+    text-decoration: none;
+    margin-top: 1.5vw;
+   }
+   .conheca li{
+    list-style: none;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+   }
+   .conheca a{
+    color: #fff;
+    text-decoration: none;
+   }
+   .conheca li :hover{
+    color: #363432;
+    transition: 150ms;
+   }
+   .semLink2{
+    display: block;
+    position: relative;
+    top: 4vw;
+    margin-bottom: auto;
+   }
+   .semLinkzinhos{
+    display: block;
+   }
+.arrumaPosicao{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+}
+.relativa{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 5vw;
+    text-align: center;
+}
+.migoRodape{
+    position: relative;
+    height: 3vw;
+
+}
+.migoRodape img{
+    width: 10vw;
+    height: 3vw;
+}
+
+
+/* CADASTRO DE ANIMAIS */
+
+/* HEADER */
+
+.headerCad {
+  background-color: #F54D58;
+  height: 45vw;
+  border-bottom: 0.5vw solid #1E1F23;
+  box-shadow: 0vw 0.1vw 1vw rgba(0, 0, 0, 0.8);
+}
+
+#imgHeaderCad {
+  height: 100%;
+}
+
+/* CADASTRO */
+
+.cadastroAnimal {
+  height: 16vw;
+  margin: auto;
+}
+
+.cadastroTextos {
+  width: 100%;
+  display: flex;
+}
+
+#cadastreText {
+  color: #F54D58;
+  margin: auto;
+  margin-top: 5vw;
+}
+
+#informacoesText {
+  font-weight: lighter;
+  margin: auto;
+  margin-top: 2vw;
+}
+
+#identificacaoText {
+  color: #F54D58;
+  margin-top: 2vw;
+}
+
+#identificacaoPosicao {
+  display: flex;
+  justify-content: center;
+  gap: 0.4vw;
+}
+
+.linhaCad {
+  background-color: #F54D58;
+  width: 50%;
+  height: 0.2vw;
+  margin-top: 2.35vw;
+}
+
+.cadastroForm{
+  height: 40vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.formularioEspaco {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.formularioGeral label{
+  font-size: 0.9vw;
+}
+
+#idadeForm,
+#especieForm,
+#sexoForm,
+#sobreForm,
+#urlForm {
+  margin-top: 1.5vw;
+}
+
+#nomeForm,
+#sobreForm,
+#urlForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#nomeForm input,
+#sobreForm textarea,
+#urlForm input,
+#idadeForm input,
+#especieForm select,
+#sexoForm select {
+  border-style: none;
+  border: 0.1vw solid #1E1F23;
+  border-radius: 0.7vw;
+}
+
+#sobreForm textarea{
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+}
+
+#nomeForm input,
+#urlForm input,
+#idadeForm input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  height: 3vw;
+}
+
+#idadeForm,
+#especieForm,
+#sexoForm {
+  display: inline-flex;
+}
+
+#especieForm select,
+#sexoForm select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  width: 10vw;
+  height: 3vw;
+}
+
+#especieForm option,
+#sexoForm option {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  width: 10vw;
+  height: 3vw;
+}
+
+#idadeForm label,
+#especieForm label,
+#sexoForm label {
+  margin-top: 1vw;
+  margin-right: 0.2vw;
+  height: 1vw;
+}
+
+.buttonCadFormPosition {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonCadForm {
+  background-color: #F54D58;
+  color: white;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 3vw;
+  border-style: none;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+#buttonCadForm:hover{
+  background-color: rgb(209, 55, 65);
+}
+
+.sectionCad {
+  margin: auto;
+  width: 45%;
+}
+
+.sectionCadLeft {
+  width: 25%;
+}
+
+.sectionCadLeft a {
+text-decoration: none;
+}
+
+.sectionCadRight {
+  width: 27%;
+}
+
+.patas {
+  width: 20vw;
+  margin-left: 5vw;
+}
+
+#pata1 {
+  margin-left: 2.5vw;
+  margin-top: 12vw;
+  transform: rotate(-25deg);
+}
+
+#pata2 {
+  margin-top: 1vw;
+  transform: rotate(-3deg);
+}
+
+.cad {
+  display: flex;
+}
+
+.returnCad {
+  display: flex;
+  margin-top: 5.5vw;
+  justify-content: center;
+}
+
+.returnCad img {
+  width: 1.5vw;
+  margin-right: 1vw;
+}
+
+.returnCad h4 {
+  font-size: 1.3vw;
+  color: #1E1F23;
+}

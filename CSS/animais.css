@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Montserrat', 'serif';
+}
+html,
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+body{
+    background-color: #FEEFDA;
+    font-size: 1.2vw;
+}
+
+.cards{
+    position: relative;
+}
+.dentroCards{
+    position: relative;
+    top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vw;
+    margin-bottom: 15vw;
+}
+.dentroCards img{
+    width: 20vw;
+    border-radius: 1vw;
+    height: 20vw;
+
+}
+.infobichos{
+    position: relative;
+    background-color: #fff;
+    width: 18vw;
+    margin-bottom: 0vw;
+    top: -4vw;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    padding-left: 2vw;
+    padding-bottom: 4vw;
+    box-shadow: 0vw -0.2vw 0.2vw  #00000049;
+}
+.dentroCards h1{
+    position: relative;
+    left: 0.1vw;
+    font-size: 2vw;
+    }
+    .dentroCards h2{
+        position: absolute;
+        font-size: 1.2vw;
+        bottom: 1vw;
+        left: 2vw;
+    }
+    .dentroCards h3{
+    
+        position: relative;
+        bottom: -1vw;
+        font-size: 1.2vw;
+      
+    }
+    .cartao{
+        cursor: pointer;
+    }
+    .fotoinicial img{
+        margin: auto;
+        width: 100%;
+        height: 45vw;        
+        text-align: center;
+    }
+    .fotoinicial{
+        position: relative;
+     
+        text-align: center;
+    }
+
+/* NAVBAR */
+
+.navbarFundo{
+    position: absolute;
+    width: 100%;
+    height: 6vw;
+    z-index: 3;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  }
+  
+  .navbar{
+    position: relative;
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    z-index: 4;
+  }
+  
+  .navbarEspaco{
+    position: absolute;
+    border-bottom: 0.123vw solid white;
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .itensNavbarEspaco{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .itensNavbarLista{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    margin-top: 1.8vw;
+  }
+
+  .itensNavbarLista li:hover{
+    text-decoration: underline white;
+  }
+  
+  .itensNavbarLista a{
+   text-decoration: none; 
+   color: white;
+   text-transform: capitalize;
+   font-weight: lighter;
+  }
+  
+  .logoNavbar{
+    position: relative;
+    height: 85%;
+    width: 18%;
+    margin-top: 1.4vw;
+  }
+  
+  #imgLogoNavbar{
+    width: 10vw;
+  }
+
+
+
+
+      /*  RODAPÉ */
+
+   footer{
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    background-color: #F2506E;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: auto;
+    font-size: 1vw;
+    color: #fff;
+   }
+   footer div{
+    left: 2vw;
+}
+   .semLink{
+
+    display: block;
+    position: relative;
+    top: 4vw;
+
+    margin-bottom: auto;
+   }
+   .conheca{
+    width: 14vw;
+    text-decoration: none;
+    margin-top: 1.5vw;
+   }
+   .conheca li{
+    list-style: none;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+   }
+   .conheca a{
+    color: #fff;
+    text-decoration: none;
+   }
+   .conheca li :hover{
+    color: #363432;
+    transition: 150ms;
+   }
+   .semLink2{
+    display: block;
+    position: relative;
+    top: 4vw;
+    margin-bottom: auto;
+   }
+   .semLinkzinhos{
+    display: block;
+   }
+.arrumaPosicao{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+}
+.relativa{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 5vw;
+    text-align: center;
+}
+.migoRodape{
+    position: relative;
+    height: 3vw;
+
+}
+.migoRodape img{
+    width: 10vw;
+    height: 3vw;
+}
+/*  FIM DO RODAPÉ */
